@@ -13,3 +13,29 @@ Make sure to add and push the pkl or text file of your scraped html (this is spe
 * (Question 6) Histogram shown with appropriate labelling: 1 pt
 * (Question 7) Histogram shown with appropriate labelling: 1 pt
 * (Question 8) Thoughtful answer provided: 1 pt
+
+## Dependencies
+This project requires a few libraries that must be downloaded. These are: **beautifulsoup4, html5lib, matplotlib spacy, spacytextblob, and requests**
+
+Store these libraries in the requirements.txt file in the project repository:
+```
+beautifulsoup4
+html5lib
+requests
+spacy
+spacytextblob
+matplotlib
+```
+
+Next, install the packages in the terminal with:
+```
+python3 -m pip install -r requirements.text
+```
+Then freeze the requirements.txt file:
+```
+python3 -m pip freeze > requirements.txt
+```
+An additional step is required after installing these libraries to download a model from spacy. This command can be run in the terminal:
+```
+python3 -m spacy download en_core_web_sm
+```
